@@ -7,9 +7,9 @@ axios('https://pokeapi.co/api/v2/pokemon/trubbish')
         //Use 'data'
         const pokemon = response.data;
         //URL returns object with data of Pokemon Requested
-        console.log("This is a " + pokemon.name + " and its ID is " + pokemon.id);
+        console.log("Look! it's a " + pokemon.name + "! ID# " + pokemon.id);
     })
     .catch(function (error) {
         //handles error
-        console.log("Error: " + error);
+        console.log("OOF: " + error);
     });
