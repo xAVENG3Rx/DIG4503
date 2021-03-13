@@ -12,7 +12,9 @@ App.get('/people/:person' , (req, res) => {
 //Dynamic route #2
 App.get('/person/:id', (req,res) => {
     res.send("They're ID number is " + req.params.id);
-})
+    //type "/person/" and then a number of your choosing
+
+});
 
 App.listen(port, () => {
 
