@@ -7,7 +7,7 @@
 
             let element = document.querySelector("#age");
 
-            fetch("/employees/ages/:age" + element.value)
+            fetch("/employees/ages/" + element.value)
             .then((res) => {
                 return res.json();
             })
@@ -30,7 +30,7 @@
 
             let element = document.querySelector("#name");
 
-            fetch("/employees/name/:name" + element.value)
+            fetch("/employees/name/" + element.value)
             .then((res) => {
                 return res.json();
             })
